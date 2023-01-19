@@ -1,0 +1,112 @@
+﻿<Bar Breakpoint="Breakpoint.Desktop" NavigationBreakpoint="Breakpoint.Tablet" ThemeContrast="ThemeContrast.Dark"
+     Mode="BarMode.VerticalInline" CollapseMode="BarCollapseMode.Small">
+    <BarToggler />
+    <BarBrand>
+        <BarItem>
+            <BarLink To="">
+                <BarIcon IconName="customIcon" />
+                Clinic First Template
+            </BarLink>
+        </BarItem>
+    </BarBrand>
+    <BarMenu>
+        <BarStart>
+            <BarItem>
+                <BarLink To="">
+                    <BarIcon IconName="IconName.Dashboard" />
+                    Dashboard
+                </BarLink>
+            </BarItem>
+            <BarItem>
+                <BarDropdown @bind-Visible="oriBlazorVisible">
+                    <BarDropdownToggle>
+                        <BarIcon IconName="IconName.Flag" />
+                        Original Blazor Demo
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem To="counter">Counter</BarDropdownItem>
+                        <BarDropdownItem To="fetchdata">Fetch Data</BarDropdownItem>
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+            <BarItem>
+                <BarDropdown @bind-Visible="uiElementsVisible">
+                    <BarDropdownToggle>
+                        <BarIcon IconName="IconName.Wrench" />
+                        UI Elements
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem To="tests/alerts">Alerts</BarDropdownItem>
+                        <BarDropdownItem To="tests/badges">Badges</BarDropdownItem>
+                        <BarDropdownItem To="tests/buttons">Buttons</BarDropdownItem>
+
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+            <BarItem>
+                <BarDropdown @bind-Visible="@formsVisible">
+                    <BarDropdownToggle>
+                        <BarIcon IconName="IconName.Edit" />
+                        Forms
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem To="tests/forms">
+                            Forms
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/focus-trap">
+                            Focus Trap
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/pickers">
+                            Pickers
+                        </BarDropdownItem>
+                        
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+            
+            
+        </BarStart>
+        <BarEnd>
+            <BarItem>
+                <BarDropdown @bind-Visible="@utilitiesVisible">
+                    <BarDropdownToggle>
+                        <BarIcon IconName="IconName.Flask" />
+                        Utilities
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem To="tests/utilities/borders">
+                            Borders
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/utilities/flex">
+                            Flex
+                        </BarDropdownItem>
+                        
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+            <BarItem>
+                <BarDropdown>
+                    <BarDropdownToggle>
+                        <BarIcon IconName="IconName.Smartphone" />
+                        Apps
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem To="apps/todo">
+                            Todo
+                        </BarDropdownItem>
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+        </BarEnd>
+    </BarMenu>
+</Bar>
+@code {
+    private bool oriBlazorVisible = true;
+    private bool uiElementsVisible = false;
+    private bool utilitiesVisible = false;
+    private bool extensionsVisible = false;
+    private bool formsVisible = false;
+    private bool datagridVisible = false;
+
+    RenderFragment customIcon =@<img src="/cf-logo-no-text.png" style="width:32px; height: 32px" />;
+}
