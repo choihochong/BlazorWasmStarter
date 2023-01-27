@@ -19,8 +19,11 @@ builder.Services
   {
       options.Immediate = true;
   })
+  .SetupDemoServices()
   .AddBootstrap5Providers()
   .AddFontAwesomeIcons();
+
+
 //Blazorise
 
 await builder.Build().RunAsync();

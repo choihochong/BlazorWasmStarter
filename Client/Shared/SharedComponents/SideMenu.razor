@@ -103,7 +103,65 @@
                     </BarDropdownMenu>
                 </BarDropdown>
             </BarItem>
-            
+            <BarItem>
+                <BarDropdown @bind-Visible="@extensionsVisible">
+                    <BarDropdownToggle>
+                        <BarIcon IconName="IconName.PuzzlePiece" />
+                        Extensions
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem To="uidemo/autocomplete">
+                            Autocomplete
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/components">
+                            Components
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/charts">
+                            Charts
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/charts/datalabels">
+                            Charts Data Labels
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/livecharts">
+                            Live Charts
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/loadingindicator">
+                            Loading Indicator
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/markdown">
+                            Markdown
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/treeview">
+                            TreeView
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/richtextedit">
+                            RichTextEdit
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/spinkit">
+                            Spin Kit
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/video">
+                            Video
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/qrcode">
+                            QR Code
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/cropper">
+                            Cropper
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/animate">
+                            Animate
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/lottie-animation">
+                            Lottie Animation
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/snackbar">
+                            Snackbar
+                        </BarDropdownItem>
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+
             
         </BarStart>
         <BarEnd>
