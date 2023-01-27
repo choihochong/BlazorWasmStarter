@@ -5,7 +5,7 @@
         <BarItem>
             <BarLink To="">
                 <BarIcon IconName="customIcon" />
-                Clinic First Template
+                Clinic First
             </BarLink>
         </BarItem>
     </BarBrand>
@@ -36,9 +36,31 @@
                         UI Elements
                     </BarDropdownToggle>
                     <BarDropdownMenu>
-                        <BarDropdownItem To="tests/alerts">Alerts</BarDropdownItem>
-                        <BarDropdownItem To="tests/badges">Badges</BarDropdownItem>
-                        <BarDropdownItem To="tests/buttons">Buttons</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/alerts">Alerts</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/badges">Badges</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/buttons">Buttons</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/breadcrumbs">Breadcrumbs</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/cards">Cards</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/carousel">Carousel</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/collapse">Collapse</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/dragdrop">Drag & Drop</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/dropdowns">Dropdowns</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/figures">Figures</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/file-picker">File Picker</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/icons">Icons </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/jumbotrons">Jumbotrons </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/listgroup">List group</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/modals">Modals</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/modal-provider">Modal Provider</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/paginations">Paginations</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/progressbars">Progress bars</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/ratings">Rating</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/steps">Steps</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/tables">Tables</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/tabs">Tabs</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/tooltips">Tooltips</BarDropdownItem>
+                        <BarDropdownItem To="uidemo/typography">Typography</BarDropdownItem>
+
 
                     </BarDropdownMenu>
                 </BarDropdown>
@@ -50,20 +72,96 @@
                         Forms
                     </BarDropdownToggle>
                     <BarDropdownMenu>
-                        <BarDropdownItem To="tests/forms">
+                        <BarDropdownItem To="uidemo/forms">
                             Forms
                         </BarDropdownItem>
-                        <BarDropdownItem To="tests/focus-trap">
+                        <BarDropdownItem To="uidemo/focus-trap">
                             Focus Trap
                         </BarDropdownItem>
-                        <BarDropdownItem To="tests/pickers">
+                        <BarDropdownItem To="uidemo/pickers">
                             Pickers
                         </BarDropdownItem>
-                        
+                        <BarDropdownItem To="uidemo/validations">
+                            Validations
+                        </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/misc-forms">
+                            Misc
+                        </BarDropdownItem>
+                        <BarDropdown>
+                            <BarDropdownToggle>
+                                Nested Forms
+                            </BarDropdownToggle>
+                            <BarDropdownMenu>
+                                <BarDropdownItem To="uidemo/forms">
+                                    Nested Forms
+                                </BarDropdownItem>
+                                <BarDropdownItem To="uidemo/validations">
+                                    Nested Validations
+                                </BarDropdownItem>
+                            </BarDropdownMenu>
+                        </BarDropdown>
                     </BarDropdownMenu>
                 </BarDropdown>
             </BarItem>
-            
+            <BarItem>
+                <BarDropdown @bind-Visible="@extensionsVisible">
+                    <BarDropdownToggle>
+                        <BarIcon IconName="IconName.PuzzlePiece" />
+                        Extensions
+                    </BarDropdownToggle>
+                    <BarDropdownMenu>
+                        <BarDropdownItem To="uidemo/autocomplete">
+                            Autocomplete
+                        </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/components">
+                            Components
+                        </BarDropdownItem>
+@*                        <BarDropdownItem To="tests/charts">
+                            Charts
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/charts/datalabels">
+                            Charts Data Labels
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/livecharts">
+                            Live Charts
+                        </BarDropdownItem>*@
+                        <BarDropdownItem To="uidemo/loadingindicator">
+                            Loading Indicator
+                        </BarDropdownItem>
+                  @*      <BarDropdownItem To="tests/markdown">
+                            Markdown
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/treeview">
+                            TreeView
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/richtextedit">
+                            RichTextEdit
+                        </BarDropdownItem>*@
+                        <BarDropdownItem To="uidemo/spinkit">
+                            Spin Kit
+                        </BarDropdownItem>
+                        @*<BarDropdownItem To="tests/video">
+                            Video
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/qrcode">
+                            QR Code
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/cropper">
+                            Cropper
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/animate">
+                            Animate
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/lottie-animation">
+                            Lottie Animation
+                        </BarDropdownItem>
+                        <BarDropdownItem To="tests/snackbar">
+                            Snackbar
+                        </BarDropdownItem>*@
+                    </BarDropdownMenu>
+                </BarDropdown>
+            </BarItem>
+
             
         </BarStart>
         <BarEnd>
@@ -74,13 +172,33 @@
                         Utilities
                     </BarDropdownToggle>
                     <BarDropdownMenu>
-                        <BarDropdownItem To="tests/utilities/borders">
+                        <BarDropdownItem To="uidemo/utilities/borders">
                             Borders
                         </BarDropdownItem>
-                        <BarDropdownItem To="tests/utilities/flex">
+                        <BarDropdownItem To="uidemo/utilities/flex">
                             Flex
                         </BarDropdownItem>
-                        
+                        <BarDropdownItem To="uidemo/utilities/overflow">
+                            Overflow
+                        </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/utilities/layout">
+                            Layout
+                        </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/utilities/position">
+                            Position
+                        </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/utilities/shadows">
+                            Shadows
+                        </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/utilities/sizing">
+                            Sizing
+                        </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/utilities/vertical-align">
+                            Vertical align
+                        </BarDropdownItem>
+                        <BarDropdownItem To="uidemo/utilities/services">
+                            Services
+                        </BarDropdownItem>
                     </BarDropdownMenu>
                 </BarDropdown>
             </BarItem>
