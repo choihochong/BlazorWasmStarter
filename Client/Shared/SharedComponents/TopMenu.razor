@@ -1,4 +1,5 @@
 ﻿@using Blazorise.Localization
+@using DevExpress.Blazor
 
 <Bar @bind-Visible="@topbarVisible" Breakpoint="Breakpoint.Desktop" Background="Background.White" Shadow="Shadow.Default" ThemeContrast="ThemeContrast.Light">
     <BarBrand>
@@ -11,6 +12,49 @@
     </BarBrand>
     <BarToggler />
     <BarMenu>
+
+        <DxMenu>
+            <Items>
+                <DxMenuItem Text="Products" IconCssClass="oi oi-layers">
+                    <Items>
+                        <DxMenuItem Text="Subscriptions / Packs" />
+                    </Items>
+                </DxMenuItem>
+                <DxMenuItem Text="Support" IconCssClass="oi oi-people">
+                    <Items>
+                        <DxMenuItem Text="Knowledge Base" />
+                    </Items>
+                </DxMenuItem>
+                <DxMenuItem CssClass="ml-auto">
+                    <Template>
+                        <div class="container">
+                            <input type="text" class="form-control form-control-sm center" placeholder="Search...">
+                        </div>
+                    </Template>
+                </DxMenuItem>
+                <DxMenuItem Text="User Profile">
+                    <TextTemplate>
+                        <div class="oi oi-person" />
+                    </TextTemplate>
+                    <SubMenuTemplate>
+                        <div class="w-100">
+                            <div class="flex-column align-items-center justify-content-center">
+                                <div class="logo-container d-flex align-items-center justify-content-center mt-2">
+                                    <div class="oi oi-person text-muted h1" />
+                                </div>
+                                <div class="user-name-container bm-3 mb-2">
+                                    <div class="user-name-title text-muted text-center">User Name</div>
+                                    <div class="user-name text-center">John Heart</div>
+                                </div>
+                                <div class="d-flex justify-content-center mb-2">
+                                    <DxButton Text="Log Off" RenderStyle="@ButtonRenderStyle.Secondary"></DxButton>
+                                </div>
+                            </div>
+                        </div>
+                    </SubMenuTemplate>
+                </DxMenuItem>
+            </Items>
+        </DxMenu>
         <BarStart>
             <BarItem>
                 <BarLink To="https://blazorise.com/">Home</BarLink>

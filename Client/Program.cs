@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Blazorise;
 using Blazorise.Bootstrap5;
 using Blazorise.Icons.FontAwesome;
+using DevExpress.Blazor;
+
 
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -21,7 +23,9 @@ builder.Services
   })
   .SetupDemoServices()
   .AddBootstrap5Providers()
-  .AddFontAwesomeIcons();
+  .AddFontAwesomeIcons()
+  .AddDevExpressBlazor(configure => configure.BootstrapVersion = BootstrapVersion.v5);
+  
 
 
 //Blazorise

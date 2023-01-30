@@ -16,6 +16,7 @@
     <PackageReference Include="Blazorise.Sidebar" Version="1.1.6" />
     <PackageReference Include="Blazorise.SpinKit" Version="1.1.6" />
     <PackageReference Include="Blazorise.TreeView" Version="1.1.6" />
+    <PackageReference Include="DevExpress.Blazor" Version="22.2.3" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.1" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
